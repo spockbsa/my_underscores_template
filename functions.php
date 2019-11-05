@@ -124,6 +124,8 @@ function andrewcarlsonbio_scripts() {
 
     wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css' );
 
+    wp_enqueue_style( 'andrewcarlsonbio-custom-style', get_template_directory_uri() . '/custom.css');
+
     wp_enqueue_script( 'bootstrap-js' , get_template_directory_uri() . '/bootstrap/js/bootstrap.bundle.min.js', array('jquery') );
 
 	wp_enqueue_script( 'andrewcarlsonbio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
