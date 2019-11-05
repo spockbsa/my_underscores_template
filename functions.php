@@ -122,6 +122,10 @@ add_action( 'widgets_init', 'andrewcarlsonbio_widgets_init' );
 function andrewcarlsonbio_scripts() {
 	wp_enqueue_style( 'andrewcarlsonbio-style', get_stylesheet_uri() );
 
+    wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css' );
+
+    wp_enqueue_script( 'bootstrap-js' , get_template_directory_uri() . '/bootstrap/js/bootstrap.bundle.min.js', array('jquery') );
+
 	wp_enqueue_script( 'andrewcarlsonbio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'andrewcarlsonbio-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
